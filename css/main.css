@@ -7,7 +7,7 @@ html a, body a {
   text-decoration: none;
 }
 html a:hover, body a:hover {
-  text-decoration: underline;
+  color: #7165E2;
 }
 html ul, body ul {
   list-style: none;
@@ -32,26 +32,37 @@ header .header-bg {
 }
 header nav {
   float: right;
+  margin-right: 100px;
+  margin-top: 10px;
 }
 header nav ul li {
   display: inline-block;
-  font-weight: bold;
-}
-header nav ul li:not(:last-child) {
   margin-right: 20px;
-  font-weight: normal;
+}
+header nav ul li:last-child {
+  margin-right: 0;
 }
 header nav ul li a {
   color: #fff;
   font-size: 25px;
 }
 header .phone-mock {
+  display: inline-block;
   position: absolute;
   top: 50px;
   margin-left: 100px;
 }
 header .phone-mock img {
   width: 40%;
+}
+header .header-text {
+  display: inline-block;
+  position: absolute;
+  top: 150px;
+  margin-left: 700px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

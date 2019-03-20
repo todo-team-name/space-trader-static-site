@@ -9,7 +9,8 @@ html, body {
         text-decoration: none;
 
         &:hover {
-            text-decoration: underline;
+            // text-decoration: underline;
+            color: $blue;
         }
     }
 
@@ -38,14 +39,15 @@ header {
 
     nav {
         float: right;
+        margin-right: 100px;
+        margin-top: 10px;
 
         ul li {
             display: inline-block;
-            font-weight: bold;
+            margin-right: 20px;
 
-            &:not(:last-child) {
-                margin-right: 20px;
-                font-weight: normal;
+            &:last-child {
+                margin-right: 0;
             }
 
             a {
@@ -56,6 +58,7 @@ header {
     }
 
     .phone-mock {
+        display: inline-block;
         position: absolute;
         top: 50px;
         margin-left: 100px;
@@ -63,5 +66,15 @@ header {
         img {
             width: 40%;
         }
+    }
+
+    .header-text {
+        display: inline-block;
+        position: absolute;
+        top: 150px;
+        margin-left: 700px;
+        font-size: 80px;
+        font-weight: bold;
+        color: $white;
     }
 }
