@@ -18,6 +18,9 @@ html, body {
     }
 }
 
+/******************
+* Landing Page
+* ****************/
 header {
     position: relative;
     height: 70vh;
@@ -78,11 +81,14 @@ header {
     }
 }
 
+/*************************
+* Main Page Framework
+* ***********************/
 .gradient {
     background: $gradient fixed;
 }
 
-#login.card {
+.card {
     background: $white;
     display: flex;
     flex-direction: column;
@@ -115,7 +121,7 @@ header {
         }
     }
 
-    .login-input {
+    .form-container {
         margin-top: 15%;
 
         .input-group {
@@ -152,4 +158,8 @@ header {
             box-shadow: $hover-shadow;
         }
     }
+}
+
+#signup.card button {
+    margin-top: 100px;
 }

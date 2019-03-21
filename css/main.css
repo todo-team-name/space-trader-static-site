@@ -13,6 +13,9 @@ html ul, body ul {
   list-style: none;
 }
 
+/******************
+* Landing Page
+* ****************/
 header {
   position: relative;
   height: 70vh;
@@ -65,11 +68,14 @@ header .header-text {
   color: #fff;
 }
 
+/*************************
+* Main Page Framework
+* ***********************/
 .gradient {
   background: linear-gradient(105deg, #9795F0, #C7AEE3, #FBC8D4) fixed;
 }
 
-#login.card {
+.card {
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -85,35 +91,35 @@ header .header-text {
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.43);
   padding: 30px 50px;
 }
-#login.card .card-header-text h1, #login.card .card-header-text h2 {
+.card .card-header-text h1, .card .card-header-text h2 {
   margin: 0;
   padding: 0;
 }
-#login.card .card-header-text h1 {
+.card .card-header-text h1 {
   font-size: 45px;
   margin-bottom: 5px;
 }
-#login.card .card-header-text h2 {
+.card .card-header-text h2 {
   font-size: 35px;
   color: #908C8C;
 }
-#login.card .login-input {
+.card .form-container {
   margin-top: 15%;
 }
-#login.card .login-input .input-group input {
+.card .form-container .input-group input {
   width: 95%;
   border: 0;
   border-bottom: solid 1px #D8D8D8;
   padding: 7px 0;
   font-size: 20px;
 }
-#login.card .login-input .input-group input:not(:first-of-type) {
+.card .form-container .input-group input:not(:first-of-type) {
   margin-top: 30px;
 }
-#login.card .login-input .input-group input:focus {
+.card .form-container .input-group input:focus {
   outline: none;
 }
-#login.card button {
+.card button {
   margin-top: 150px;
   width: 200px;
   height: 40px;
@@ -124,8 +130,12 @@ header .header-text {
   font-size: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-#login.card button:hover {
+.card button:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#signup.card button {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
