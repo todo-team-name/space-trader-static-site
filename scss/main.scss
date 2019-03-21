@@ -9,7 +9,6 @@ html, body {
         text-decoration: none;
 
         &:hover {
-            // text-decoration: underline;
             color: $blue;
         }
     }
@@ -73,8 +72,84 @@ header {
         position: absolute;
         top: 150px;
         margin-left: 700px;
-        font-size: 80px;
+        font-size: $font-hero;
         font-weight: bold;
         color: $white;
+    }
+}
+
+.gradient {
+    background: $gradient fixed;
+}
+
+#login.card {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 550px;
+    width: 640px;
+    border-radius: 5%;
+    box-shadow: $box-shadow;
+    padding: 30px 50px;
+
+    .card-header-text {
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: $font-xl;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: $font-lg;
+            color: $dark-grey;
+        }
+    }
+
+    .login-input {
+        margin-top: 15%;
+
+        .input-group {
+            input {
+                width: 95%;
+                border: 0;
+                border-bottom: solid 1px $grey;
+                padding: 7px 0;
+                font-size: $font-sm;
+
+                &:not(:first-of-type) {
+                    margin-top: 30px;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    button {
+        margin-top: 150px;
+        width: 200px;
+        height: 40px;
+        background: $blue;
+        border: none;
+        border-radius: 30px;
+        color: $white;
+        font-size: $font-sm;
+        box-shadow: $button-shadow;
+
+        &:hover {
+            box-shadow: $hover-shadow;
+        }
     }
 }
